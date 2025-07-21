@@ -1,5 +1,7 @@
 # 🎬 Movie Recommendation System
 
+**[👉 Try the Live App on Streamlit Cloud](https://movie-recommendation-system-by-tathastu-wayhmoxsbv6cryubndmnyh.streamlit.app/?embed_options=show_toolbar,show_padding,show_footer,show_colored_line,light_theme,dark_theme)**
+
 A Netflix-inspired, interactive movie recommendation web app built with **Streamlit** and **scikit-learn**. Instantly get personalized movie suggestions based on your favorite titles or genres, powered by content-based filtering on the TMDb 5000 Movie Dataset.
 
 ---
