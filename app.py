@@ -1,11 +1,18 @@
 import streamlit as st
 import pandas as pd
 import requests
+import os
+from dotenv import load_dotenv
 from movie_recommender import final_data, recommend, get_movie_overview_and_genres
 
-# TMDb API key (provided by user)
-TMDB_API_KEY = '9f54a761a19766e30d4eda98742fe5e6'
-TMDB_BEARER_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZjU0YTc2MWExOTc2NmUzMGQ0ZWRhOTg3NDJmZTVlNiIsIm5iZiI6MTc1MzA4NTA4OS44MzMsInN1YiI6IjY4N2RmNGExYjk0ZTY2N2Y4YjUyOGY5YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tJ6bxRKCKJQ2GTLXDhQTIYuZgubFe-4a4PYmOiHoBQc'
+# Load environment variables
+load_dotenv()
+
+# TMDb API credentials from environment variables
+TMDB_API_KEY = os.getenv('TMDB_API_KEY')
+TMDB_BEARER_TOKEN = os.getenv('TMDB_BEARER_TOKEN')
+
+
 
 # --- CSS for Netflix-like look and full-width adaptation ---
 st.markdown('''
